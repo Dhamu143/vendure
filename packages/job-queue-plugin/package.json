@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "watch": "tsc -p ./tsconfig.build.json --watch",
-    "build": "rimraf lib && tsc -p ./tsconfig.build.json && yarn ts-node build.ts",
+    "build": "node init && rimraf lib && tsc -p ./tsconfig.build.json && yarn ts-node build.ts",
     "lint": "tslint --fix --project ./",
     "test": "jest --config ./jest.config.js",
     "ci": "yarn build"

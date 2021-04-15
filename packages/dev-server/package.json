@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "populate": "node -r ts-node/register populate-dev-server.ts",
-    "run:server": "node -r ts-node/register index.ts",
-    "run:worker": "node -r ts-node/register index-worker.ts",
-    "start": "concurrently yarn:run*",
+    "run:server": "node init && node -r ts-node/register index.ts",
+    "run:worker": "node init && node -r ts-node/register index-worker.ts",
+    "start": "node init && concurrently yarn:run*",
     "load-test:1k": "node -r ts-node/register load-testing/run-load-test.ts 1000",
     "load-test:10k": "node -r ts-node/register load-testing/run-load-test.ts 10000",
     "load-test:100k": "node -r ts-node/register load-testing/run-load-test.ts 100000"
