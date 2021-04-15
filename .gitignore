@@ -7,7 +7,6 @@
 ../.idea/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-.env
 lerna-debug.log
 dist
 e2e/__data__/*
@@ -24,7 +23,6 @@ docs/content/docs/graphql-api/*
 !docs/content/docs/graphql-api/_index.md
 !docs/content/docs/graphql-api/shop/_index.md
 !docs/content/docs/graphql-api/admin/_index.md
-.vscode/
 yarn-error.log
 
 # Sensitive or high-churn files:
@@ -393,3 +391,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+temp_auto_push.bat
+temp_interactive_push.bat
+branch_structure.json
+config.bat

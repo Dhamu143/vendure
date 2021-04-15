@@ -23,7 +23,7 @@
     "url": "git+https://github.com/vendure-ecommerce/vendure.git"
   },
   "scripts": {
-    "build": "tsc -p ./tsconfig.build.json",
+    "build": "node init && tsc -p ./tsconfig.build.json",
     "watch": "tsc -p ./tsconfig.build.json -w",
     "lint": "tslint --fix --project ./",
     "ci": "yarn build"
